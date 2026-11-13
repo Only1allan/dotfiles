@@ -1,0 +1,81 @@
+# Alacritty on Windows -> WSL
+# Requires Alacritty 0.13+ and a WSL distro named "Ubuntu".
+# Check the distro name with: wsl.exe -l -v
+# If it is different, change the value in `args` below.
+
+[env]
+TERM = "xterm-256color"
+
+[terminal]
+osc52 = "CopyPaste"
+
+[terminal.shell]
+program = "wsl.exe"
+args = ["-d", "Ubuntu", "--cd", "~"]
+
+[font]
+size = 9
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+
+[window]
+padding = { x = 14, y = 14 }
+decorations = "None"
+
+[keyboard]
+bindings = [
+  { key = "Insert", mods = "Shift", action = "Paste" },
+  { key = "Insert", mods = "Control", action = "Copy" },
+  { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
+  { key = "Return", mods = "Alt | Shift", chars = "\u001B[13;4u" }
+]
+
+[colors.primary]
+background = "#121212"
+foreground = "#bebebe"
+
+[colors.cursor]
+text = "#121212"
+cursor = "#bebebe"
+
+[colors.vi_mode_cursor]
+text = "#121212"
+cursor = "#bebebe"
+
+[colors.search.matches]
+foreground = "#121212"
+background = "#b91c1c"
+
+[colors.search.focused_match]
+foreground = "#121212"
+background = "#D35F5F"
+
+[colors.footer_bar]
+foreground = "#121212"
+background = "#bebebe"
+
+[colors.selection]
+text = "#bebebe"
+background = "#2a2a2a"
+
+[colors.normal]
+black = "#121212"
+red = "#D35F5F"
+green = "#FFC107"
+yellow = "#b91c1c"
+blue = "#e68e0d"
+magenta = "#D35F5F"
+cyan = "#bebebe"
+white = "#bebebe"
+
+[colors.bright]
+black = "#333333"
+red = "#B91C1C"
+green = "#FFC107"
+yellow = "#b90a0a"
+blue = "#f59e0b"
+magenta = "#B91C1C"
+cyan = "#eaeaea"
+white = "#bebebe"

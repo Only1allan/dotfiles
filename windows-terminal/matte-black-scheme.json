@@ -1,0 +1,23 @@
+{
+  "name": "Omarchy Matte Black",
+  "background": "#121212",
+  "foreground": "#BEBEBE",
+  "cursorColor": "#BEBEBE",
+  "selectionBackground": "#2A2A2A",
+  "black": "#121212",
+  "red": "#D35F5F",
+  "green": "#FFC107",
+  "yellow": "#B91C1C",
+  "blue": "#E68E0D",
+  "purple": "#D35F5F",
+  "cyan": "#BEBEBE",
+  "white": "#BEBEBE",
+  "brightBlack": "#333333",
+  "brightRed": "#B91C1C",
+  "brightGreen": "#FFC107",
+  "brightYellow": "#B90A0A",
+  "brightBlue": "#F59E0B",
+  "brightPurple": "#B91C1C",
+  "brightCyan": "#EAEAEA",
+  "brightWhite": "#BEBEBE"
+}

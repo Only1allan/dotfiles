@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "defaults": {
+      "font": {
+        "face": "JetBrainsMono Nerd Font",
+        "size": 9
+      },
+      "colorScheme": "Omarchy Matte Black",
+      "cursorShape": "filledBox",
+      "padding": "14, 14, 14, 14",
+      "scrollbarState": "hidden"
+    }
+  }
+}
